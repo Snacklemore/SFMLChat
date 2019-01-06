@@ -22,6 +22,8 @@ public:
 
     }
     int nameID;
+    std::string name;
+    std::string Room;
     sf::TcpSocket* clientSocket;
 };
 class MessageObject{
@@ -30,6 +32,8 @@ public:
     {
         msgData = data;
     }
+    std::string Room;
+    ClientObject *CObject= nullptr;
     std::string getMsgData(){
         return msgData;
     }
@@ -286,20 +290,27 @@ void sendDataToAllClients(){//call only on serverside
         }
 
         msgSend=msgQueue.front().getMsgData();
+        std::string MSGroomtype= msgQueue.front().Room;
         msgQueue.pop();
 
         globalMutex.unlock();
-
-
+        //msgSend wont store all necessary data here, only clientname, roomlocation needs to get form msgQueue
+        //grab msg, check msg for sender and location, send message to clients matching the location.
+        //privat chatrooms are unigue locations
         for(std::vector<ClientObject>::iterator it = clientList.begin();it != clientList.end();++it)
         {
             ClientObject& client = *it;
+            std::string CLIENTRoomType = client.Room;
 
             sf::Packet packetSend;
             if(!msgSend.empty())
             {
-                packetSend << msgSend;
-                client.clientSocket->send(packetSend);
+                if (CLIENTRoomType == MSGroomtype)
+                {
+                    packetSend << msgSend;
+                    client.clientSocket->send(packetSend);
+                }
+
 
             }
         }
@@ -326,6 +337,11 @@ bool Client()//set name then fork to multiuser
     ServerBool = false;
     if(socket.connect(IPADDRESS, PORT) == sf::Socket::Done)
     {
+        sf::Packet namePack;
+        std::string *nameStr=nameTagCopy;
+        namePack << *nameStr;
+        socket.send(namePack);
+
         std::cout << "Connected to " << socket.getRemoteAddress() << std::endl;
         return true;
     }
@@ -391,12 +407,19 @@ int main(int argc, char* argv[])
                 if (test.isReady(listener)) {
                     sf::TcpSocket *client = new sf::TcpSocket;
                     if (listener.accept(*client) == sf::Socket::Done) {
-                        //globalMutex.lock();
-                        clientList.emplace_back(ClientObject(clientList.size(), client));
-                        //globalMutex.unlock();
+                        sf::Packet packet;
+                        client->receive(packet);//recieving name
+                        std::string s;
+                        packet >> s;
+                        ClientObject CO(clientList.size(), client);
+                        CO.Room = "mainRoom";
+                        CO.name = s;
+
+                        clientList.emplace_back(CO);
+
                         test.add(*client);
 
-                        std::cout << "New client connected: " << client->getRemoteAddress() << std::endl;
+                        std::cout << "New client connected: " + s +"with IP:" << client->getRemoteAddress() << std::endl;
                     } else {
                         delete client;
                     }
@@ -405,7 +428,15 @@ int main(int argc, char* argv[])
                     for (std::vector<ClientObject>::iterator it = clientList.begin(); it != clientList.end(); ++it)
                     {
 
-                        ClientObject &client = *it;
+                        /*
+                         *A and B want to chat privately, A sends private ChatRequest to B, B gets prompt to accept.
+                         * B accepts the request. A and B get flagged as inside private chat room, therefore
+                         * A wont receive any messages except they are from B, and B wont receive any messages except
+                         * they are from A.
+                         * same for other chat rooms, msg send from one room will only be send to clients in that specific
+                         * room
+                        */
+                        ClientObject &client = *it;// ClientObject needs attribute to recognize where msg was send from, main room or privat chat room
                         if (test.isReady(*client.clientSocket)) {
                             sf::Packet packet;
                             if (client.clientSocket->receive(packet) == sf::Socket::Done) {
@@ -414,24 +445,43 @@ int main(int argc, char* argv[])
                                 std::string msg;
                                 packet >> msg;
                                 if (!msg.empty()) {
-                                    std::cout << "ServerLog:" << msg << std::endl;
-                                    MessageObject msgO(msg);
-                                    //globalMutex.lock();
-                                    msgQueue.push(msgO);
+                                    //get the name of client who send the msg
+                                    //std::string CLIENTName = msgSend.substr(msgSend.find(':'));
+                                    //get the message text
+                                    std::string strhlp = msg;
+                                    strhlp.erase(0,strhlp.find(':'));//message w/out nametag, 1. char contains = ':' 2.char contains whitespace followed by actual message
+                                    strhlp.erase(0,2);//cut white space and :
+                                    if(strhlp[0] != '#')
+                                    {
+                                        std::cout << "ServerLog:" << msg << std::endl;
+                                        MessageObject msgO(msg);
+                                        msgO.Room = client.Room;//same for MessageObject, need a way to send it to right client
+                                        msgQueue.push(msgO);
+                                    } else
+                                    {
+
+                                        if (strhlp.find("changeRoom sub") != std::string::npos)
+                                            client.Room = "SubRoom";
+                                        else if (strhlp.find("changeRoom main"))
+                                            client.Room = "mainRoom";
+                                        else{
+                                            std::cout << "Command not found" << std::endl;
+                                        }
+                                    }
+
                                 }
 
-                                // globalMutex.unlock();
+
                             } else if (client.clientSocket->receive(packet) == sf::Socket::Disconnected) {
-                                //std::cout << "client wants disc" << std::endl;
-                                //globalMutex.lock();
+
                                 sockPtr = client.clientSocket;
                                 it_ = it;
-                                // globalMutex.unlock();
+
                             }
                         }
 
                     }
-                    if(!(sockPtr == nullptr))
+                    if(sockPtr != nullptr)
                     {
                         test.remove(*sockPtr);
                         sockPtr->disconnect();
@@ -457,8 +507,9 @@ int main(int argc, char* argv[])
     thread3->launch();
     globalMutex.lock();
     std::cout << clientList.size()<< std::endl;
-    globalMutex.unlock();
+
     std::cout << "\nEnter \"exit\" to quit or message to send: ";
+    globalMutex.unlock();
     while(!quit)
     {
         GetInput();
