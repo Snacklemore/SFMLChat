@@ -1,0 +1,3 @@
+C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/SockR.dir
+C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/edit_cache.dir
