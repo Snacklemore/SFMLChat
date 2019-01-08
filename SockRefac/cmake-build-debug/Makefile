@@ -203,6 +203,33 @@ MessageObject.cpp.s:
 	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/MessageObject.cpp.s
 .PHONY : MessageObject.cpp.s
 
+ServerClass.obj: ServerClass.cpp.obj
+
+.PHONY : ServerClass.obj
+
+# target to build an object file
+ServerClass.cpp.obj:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/ServerClass.cpp.obj
+.PHONY : ServerClass.cpp.obj
+
+ServerClass.i: ServerClass.cpp.i
+
+.PHONY : ServerClass.i
+
+# target to preprocess a source file
+ServerClass.cpp.i:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/ServerClass.cpp.i
+.PHONY : ServerClass.cpp.i
+
+ServerClass.s: ServerClass.cpp.s
+
+.PHONY : ServerClass.s
+
+# target to generate assembly for a file
+ServerClass.cpp.s:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/ServerClass.cpp.s
+.PHONY : ServerClass.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -248,6 +275,9 @@ help:
 	@echo ... MessageObject.obj
 	@echo ... MessageObject.i
 	@echo ... MessageObject.s
+	@echo ... ServerClass.obj
+	@echo ... ServerClass.i
+	@echo ... ServerClass.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

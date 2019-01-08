@@ -6,11 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Chapo/CLionProjects/SockRefac/ClientClass.cpp
-ClientClass.h
-C:/Users/Chapo/CLionProjects/SockRefac/ClientClass.h
+C:/Users/Chapo/CLionProjects/SockRefac/ClientObject.h
+SFML/Network/TcpSocket.hpp
+-
+string
+-
 
-C:/Users/Chapo/CLionProjects/SockRefac/ClientClass.h
+C:/Users/Chapo/CLionProjects/SockRefac/MessageObject.h
+string
+-
+
+C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.cpp
+ServerClass.h
+C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.h
+
+C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.h
+iostream
+-
 SFML/Network.hpp
 -
 iostream
@@ -27,15 +39,7 @@ MessageObject.h
 C:/Users/Chapo/CLionProjects/SockRefac/MessageObject.h
 ClientObject.h
 C:/Users/Chapo/CLionProjects/SockRefac/ClientObject.h
-
-C:/Users/Chapo/CLionProjects/SockRefac/ClientObject.h
-SFML/Network/TcpSocket.hpp
--
-string
--
-
-C:/Users/Chapo/CLionProjects/SockRefac/MessageObject.h
-string
+sstream
 -
 
 C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/include/SFML/Config.hpp

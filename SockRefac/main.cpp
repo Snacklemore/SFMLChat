@@ -3,6 +3,8 @@
 #include <SFML/Network.hpp>
 #include <queue>
 #include "ClientClass.h"//CLIENT REWORK DONE
+#include "ServerClass.h"//SERVER REWORK DONE
+
 
 
 
@@ -22,5 +24,6 @@ int main(int argc, char* argv[])
     ClientClass ClientObj;
     ClientObj.createThreads();
     ClientObj.startClient();
+
 
 }

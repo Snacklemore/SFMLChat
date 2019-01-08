@@ -102,6 +102,12 @@
 		<Unit filename="C:/Users/Chapo/CLionProjects/SockRefac/MessageObject.h">
 			<Option target="SockR"/>
 		</Unit>
+		<Unit filename="C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.cpp">
+			<Option target="SockR"/>
+		</Unit>
+		<Unit filename="C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.h">
+			<Option target="SockR"/>
+		</Unit>
 		<Unit filename="C:/Users/Chapo/CLionProjects/SockRefac/main.cpp">
 			<Option target="SockR"/>
 		</Unit>
