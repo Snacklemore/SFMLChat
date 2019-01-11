@@ -36,12 +36,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.13.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeRCCompiler.cmake"
   "CMakeFiles/3.13.2/CMakeSystem.cmake"
-  "C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake"
-  "C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake"
-  "C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake"
-  "C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-debug.cmake"
-  "C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-release.cmake"
-  "C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets.cmake"
+  "C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/cmake/SFML/SFMLConfig.cmake"
+  "C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/cmake/SFML/SFMLConfigDependencies.cmake"
+  "C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/cmake/SFML/SFMLConfigVersion.cmake"
+  "C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-debug.cmake"
+  "C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets-release.cmake"
+  "C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/cmake/SFML/SFMLStaticTargets.cmake"
   )
 
 # The corresponding makefile is:

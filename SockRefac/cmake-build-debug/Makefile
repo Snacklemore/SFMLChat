@@ -176,6 +176,33 @@ ClientObject.cpp.s:
 	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/ClientObject.cpp.s
 .PHONY : ClientObject.cpp.s
 
+Cursor.obj: Cursor.cpp.obj
+
+.PHONY : Cursor.obj
+
+# target to build an object file
+Cursor.cpp.obj:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/Cursor.cpp.obj
+.PHONY : Cursor.cpp.obj
+
+Cursor.i: Cursor.cpp.i
+
+.PHONY : Cursor.i
+
+# target to preprocess a source file
+Cursor.cpp.i:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/Cursor.cpp.i
+.PHONY : Cursor.cpp.i
+
+Cursor.s: Cursor.cpp.s
+
+.PHONY : Cursor.s
+
+# target to generate assembly for a file
+Cursor.cpp.s:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/Cursor.cpp.s
+.PHONY : Cursor.cpp.s
+
 MessageObject.obj: MessageObject.cpp.obj
 
 .PHONY : MessageObject.obj
@@ -230,6 +257,33 @@ ServerClass.cpp.s:
 	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/ServerClass.cpp.s
 .PHONY : ServerClass.cpp.s
 
+TextField.obj: TextField.cpp.obj
+
+.PHONY : TextField.obj
+
+# target to build an object file
+TextField.cpp.obj:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/TextField.cpp.obj
+.PHONY : TextField.cpp.obj
+
+TextField.i: TextField.cpp.i
+
+.PHONY : TextField.i
+
+# target to preprocess a source file
+TextField.cpp.i:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/TextField.cpp.i
+.PHONY : TextField.cpp.i
+
+TextField.s: TextField.cpp.s
+
+.PHONY : TextField.s
+
+# target to generate assembly for a file
+TextField.cpp.s:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/TextField.cpp.s
+.PHONY : TextField.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -272,12 +326,18 @@ help:
 	@echo ... ClientObject.obj
 	@echo ... ClientObject.i
 	@echo ... ClientObject.s
+	@echo ... Cursor.obj
+	@echo ... Cursor.i
+	@echo ... Cursor.s
 	@echo ... MessageObject.obj
 	@echo ... MessageObject.i
 	@echo ... MessageObject.s
 	@echo ... ServerClass.obj
 	@echo ... ServerClass.i
 	@echo ... ServerClass.s
+	@echo ... TextField.obj
+	@echo ... TextField.i
+	@echo ... TextField.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

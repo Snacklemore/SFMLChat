@@ -60,71 +60,99 @@ CMakeFiles/SockR.dir/main.cpp.obj: CMakeFiles/SockR.dir/flags.make
 CMakeFiles/SockR.dir/main.cpp.obj: CMakeFiles/SockR.dir/includes_CXX.rsp
 CMakeFiles/SockR.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SockR.dir/main.cpp.obj"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\main.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\main.cpp
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\main.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\main.cpp
 
 CMakeFiles/SockR.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SockR.dir/main.cpp.i"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\main.cpp > CMakeFiles\SockR.dir\main.cpp.i
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\main.cpp > CMakeFiles\SockR.dir\main.cpp.i
 
 CMakeFiles/SockR.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SockR.dir/main.cpp.s"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\main.cpp -o CMakeFiles\SockR.dir\main.cpp.s
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\main.cpp -o CMakeFiles\SockR.dir\main.cpp.s
 
 CMakeFiles/SockR.dir/ClientObject.cpp.obj: CMakeFiles/SockR.dir/flags.make
 CMakeFiles/SockR.dir/ClientObject.cpp.obj: CMakeFiles/SockR.dir/includes_CXX.rsp
 CMakeFiles/SockR.dir/ClientObject.cpp.obj: ../ClientObject.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SockR.dir/ClientObject.cpp.obj"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\ClientObject.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\ClientObject.cpp
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\ClientObject.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\ClientObject.cpp
 
 CMakeFiles/SockR.dir/ClientObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SockR.dir/ClientObject.cpp.i"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\ClientObject.cpp > CMakeFiles\SockR.dir\ClientObject.cpp.i
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\ClientObject.cpp > CMakeFiles\SockR.dir\ClientObject.cpp.i
 
 CMakeFiles/SockR.dir/ClientObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SockR.dir/ClientObject.cpp.s"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\ClientObject.cpp -o CMakeFiles\SockR.dir\ClientObject.cpp.s
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\ClientObject.cpp -o CMakeFiles\SockR.dir\ClientObject.cpp.s
 
 CMakeFiles/SockR.dir/MessageObject.cpp.obj: CMakeFiles/SockR.dir/flags.make
 CMakeFiles/SockR.dir/MessageObject.cpp.obj: CMakeFiles/SockR.dir/includes_CXX.rsp
 CMakeFiles/SockR.dir/MessageObject.cpp.obj: ../MessageObject.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SockR.dir/MessageObject.cpp.obj"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\MessageObject.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\MessageObject.cpp
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\MessageObject.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\MessageObject.cpp
 
 CMakeFiles/SockR.dir/MessageObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SockR.dir/MessageObject.cpp.i"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\MessageObject.cpp > CMakeFiles\SockR.dir\MessageObject.cpp.i
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\MessageObject.cpp > CMakeFiles\SockR.dir\MessageObject.cpp.i
 
 CMakeFiles/SockR.dir/MessageObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SockR.dir/MessageObject.cpp.s"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\MessageObject.cpp -o CMakeFiles\SockR.dir\MessageObject.cpp.s
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\MessageObject.cpp -o CMakeFiles\SockR.dir\MessageObject.cpp.s
 
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: CMakeFiles/SockR.dir/flags.make
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: CMakeFiles/SockR.dir/includes_CXX.rsp
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: ../ClientClass.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SockR.dir/ClientClass.cpp.obj"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\ClientClass.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\ClientClass.cpp
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\ClientClass.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\ClientClass.cpp
 
 CMakeFiles/SockR.dir/ClientClass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SockR.dir/ClientClass.cpp.i"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\ClientClass.cpp > CMakeFiles\SockR.dir\ClientClass.cpp.i
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\ClientClass.cpp > CMakeFiles\SockR.dir\ClientClass.cpp.i
 
 CMakeFiles/SockR.dir/ClientClass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SockR.dir/ClientClass.cpp.s"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\ClientClass.cpp -o CMakeFiles\SockR.dir\ClientClass.cpp.s
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\ClientClass.cpp -o CMakeFiles\SockR.dir\ClientClass.cpp.s
 
 CMakeFiles/SockR.dir/ServerClass.cpp.obj: CMakeFiles/SockR.dir/flags.make
 CMakeFiles/SockR.dir/ServerClass.cpp.obj: CMakeFiles/SockR.dir/includes_CXX.rsp
 CMakeFiles/SockR.dir/ServerClass.cpp.obj: ../ServerClass.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SockR.dir/ServerClass.cpp.obj"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\ServerClass.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\ServerClass.cpp
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\ServerClass.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\ServerClass.cpp
 
 CMakeFiles/SockR.dir/ServerClass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SockR.dir/ServerClass.cpp.i"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\ServerClass.cpp > CMakeFiles\SockR.dir\ServerClass.cpp.i
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\ServerClass.cpp > CMakeFiles\SockR.dir\ServerClass.cpp.i
 
 CMakeFiles/SockR.dir/ServerClass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SockR.dir/ServerClass.cpp.s"
-	C:\Users\Chapo\Downloads\i686-7.3.0-release-posix-dwarf-rt_v5-rev0\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\ServerClass.cpp -o CMakeFiles\SockR.dir\ServerClass.cpp.s
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\ServerClass.cpp -o CMakeFiles\SockR.dir\ServerClass.cpp.s
+
+CMakeFiles/SockR.dir/TextField.cpp.obj: CMakeFiles/SockR.dir/flags.make
+CMakeFiles/SockR.dir/TextField.cpp.obj: CMakeFiles/SockR.dir/includes_CXX.rsp
+CMakeFiles/SockR.dir/TextField.cpp.obj: ../TextField.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SockR.dir/TextField.cpp.obj"
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\TextField.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\TextField.cpp
+
+CMakeFiles/SockR.dir/TextField.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SockR.dir/TextField.cpp.i"
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\TextField.cpp > CMakeFiles\SockR.dir\TextField.cpp.i
+
+CMakeFiles/SockR.dir/TextField.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SockR.dir/TextField.cpp.s"
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\TextField.cpp -o CMakeFiles\SockR.dir\TextField.cpp.s
+
+CMakeFiles/SockR.dir/Cursor.cpp.obj: CMakeFiles/SockR.dir/flags.make
+CMakeFiles/SockR.dir/Cursor.cpp.obj: CMakeFiles/SockR.dir/includes_CXX.rsp
+CMakeFiles/SockR.dir/Cursor.cpp.obj: ../Cursor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SockR.dir/Cursor.cpp.obj"
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SockR.dir\Cursor.cpp.obj -c C:\Users\Chapo\CLionProjects\SockRefac\Cursor.cpp
+
+CMakeFiles/SockR.dir/Cursor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SockR.dir/Cursor.cpp.i"
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Chapo\CLionProjects\SockRefac\Cursor.cpp > CMakeFiles\SockR.dir\Cursor.cpp.i
+
+CMakeFiles/SockR.dir/Cursor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SockR.dir/Cursor.cpp.s"
+	C:\Users\Chapo\Downloads\x86_64-7.3.0-release-posix-seh-rt_v5-rev0\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Chapo\CLionProjects\SockRefac\Cursor.cpp -o CMakeFiles\SockR.dir\Cursor.cpp.s
 
 # Object files for target SockR
 SockR_OBJECTS = \
@@ -132,7 +160,9 @@ SockR_OBJECTS = \
 "CMakeFiles/SockR.dir/ClientObject.cpp.obj" \
 "CMakeFiles/SockR.dir/MessageObject.cpp.obj" \
 "CMakeFiles/SockR.dir/ClientClass.cpp.obj" \
-"CMakeFiles/SockR.dir/ServerClass.cpp.obj"
+"CMakeFiles/SockR.dir/ServerClass.cpp.obj" \
+"CMakeFiles/SockR.dir/TextField.cpp.obj" \
+"CMakeFiles/SockR.dir/Cursor.cpp.obj"
 
 # External object files for target SockR
 SockR_EXTERNAL_OBJECTS =
@@ -142,25 +172,26 @@ SockR.exe: CMakeFiles/SockR.dir/ClientObject.cpp.obj
 SockR.exe: CMakeFiles/SockR.dir/MessageObject.cpp.obj
 SockR.exe: CMakeFiles/SockR.dir/ClientClass.cpp.obj
 SockR.exe: CMakeFiles/SockR.dir/ServerClass.cpp.obj
+SockR.exe: CMakeFiles/SockR.dir/TextField.cpp.obj
+SockR.exe: CMakeFiles/SockR.dir/Cursor.cpp.obj
 SockR.exe: CMakeFiles/SockR.dir/build.make
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libsfml-system-s-d.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libsfml-window-s-d.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libsfml-graphics-s-d.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libsfml-audio-s-d.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libsfml-network-s-d.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libsfml-window-s-d.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libfreetype.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libopenal32.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libvorbisfile.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libvorbisenc.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libvorbis.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libogg.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libFLAC.a
-SockR.exe: C:/Users/Chapo/Downloads/i686-7.3.0-release-posix-dwarf-rt_v5-rev0/mingw32/SFML-2.5.1/lib/libsfml-system-s-d.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libsfml-graphics-s-d.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libsfml-system-s-d.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libsfml-window-s-d.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libsfml-audio-s-d.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libsfml-network-s-d.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libfreetype.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libopenal32.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libvorbisfile.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libvorbisenc.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libvorbis.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libogg.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libFLAC.a
+SockR.exe: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/lib/libsfml-system-s-d.a
 SockR.exe: CMakeFiles/SockR.dir/linklibs.rsp
 SockR.exe: CMakeFiles/SockR.dir/objects1.rsp
 SockR.exe: CMakeFiles/SockR.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable SockR.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Chapo\CLionProjects\SockRefac\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SockR.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SockR.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SockR.dir/MessageObject.cpp.obj"
   "CMakeFiles/SockR.dir/ClientClass.cpp.obj"
   "CMakeFiles/SockR.dir/ServerClass.cpp.obj"
+  "CMakeFiles/SockR.dir/TextField.cpp.obj"
+  "CMakeFiles/SockR.dir/Cursor.cpp.obj"
   "SockR.pdb"
   "SockR.exe"
   "SockR.exe.manifest"

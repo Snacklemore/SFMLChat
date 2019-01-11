@@ -39,8 +39,6 @@ public:
     void ClientDisplay();//threaded
     std::string* buildNameTag(int num);
     void GetInput();//looped in main
-
-private:
     std::string *nameTagCopy;
     sf::Mutex globalMutex;
     sf::Thread* ClientSendingThread = 0;
@@ -50,6 +48,9 @@ private:
     bool quit = false;
     std::queue<MessageObject> msgQueue;
     std::queue<MessageObject> msgQueueInc;
+
+private:
+
 
 
 };
