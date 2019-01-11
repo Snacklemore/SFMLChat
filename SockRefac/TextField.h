@@ -28,8 +28,8 @@ public:
         outPutStr = " ";
         isActive= false;
         editable = true;
-       _cursor= new Cursor(sf::milliseconds(400),font,sf::Color::Red);
-       _cursor->setPosition(sf::Vector2f(0,0));
+       _cursor= new Cursor(sf::milliseconds(100000),font,sf::Color::Red);
+       _cursor->setPosition(sf::Vector2f(x+1,y+21));
         if (!font.loadFromFile("arial.ttf"))
         {
             // error...

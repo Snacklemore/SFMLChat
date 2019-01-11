@@ -18,11 +18,12 @@ public:
             std::string ch = "|";
             _cursor.setString(ch);
             _cursor.setCharacterSize(16);
-            _cursor.setPosition(0,0);
+            _Cursor.setPosition(0,0);
             _font = font;
+        _Cursor.setSize(sf::Vector2f(5.f, 2.f));
     }
 
-            void setPosition(const sf::Vector2f& pos){_cursor.setPosition(pos);}
+            void setPosition(const sf::Vector2f& pos){_Cursor.setPosition(pos);}
             void update(){
         if(_clock.getElapsedTime() >= _delay)
         {
@@ -35,12 +36,14 @@ public:
         if (_show)
             target.draw(_cursor,state);
     }*/
-
+    sf::RectangleShape _Cursor;
+    bool _show;
 private:
+
     sf::Font _font;
     sf::Clock _clock;
     const sf::Time _delay;
-    bool _show;
+
     sf::Text _cursor;
 };
 

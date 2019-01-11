@@ -45,6 +45,9 @@ void TextField::processEvents() {
 
                     str += static_cast<char>(m_event.text.unicode);
                     cursorpos+=1;
+                    sf::Vector2f pos = text.findCharacterPos(cursorpos);
+                    //sf::Vector2f pos(_cursor->_Cursor.getPosition().x + 6,_cursor->_Cursor.getPosition().y);
+                    _cursor->setPosition(pos);
                     text.setFont(font);
                     text.setCharacterSize(16);
                     text.setFillColor(sf::Color::Red);
@@ -94,7 +97,11 @@ void TextField::update() {
     m_window.draw(TextBox);
     m_window.draw(text);
     _cursor->update();
-    m_window.draw(*_cursor);
+    if(_cursor->_show){
+
+        m_window.draw(_cursor->_Cursor);
+    }
+
 
 }
 
