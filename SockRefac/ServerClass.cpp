@@ -117,6 +117,7 @@ void ServerClass::startServer() {
                 sf::TcpSocket *client = new sf::TcpSocket;
                 if (listener.accept(*client) == sf::Socket::Done) {
                     sf::Packet packet;
+                    std::cout << "Rec Name:" << std::endl;
                     client->receive(packet);//recieving name
                     std::string s;
                     packet >> s;
@@ -166,7 +167,7 @@ void ServerClass::startServer() {
                                         ':'));//message w/out nametag, 1. char contains = ':' 2.char contains whitespace followed by actual message
                                 strhlp.erase(0, 2);//cut white space and :
                                 if (strhlp[0] != '#') {
-                                    std::cout << "ServerLog:" << msg << std::endl;
+                                    std::cout << "ServerLog:" + msg << std::endl;
                                     MessageObject msgO(msg);
                                     msgO.Room = client.Room;//same for MessageObject, need a way to send it to right client
                                     msgQueue.push(msgO);

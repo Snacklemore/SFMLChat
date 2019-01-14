@@ -27,17 +27,14 @@ public:
             void update(){
         if(_clock.getElapsedTime() >= _delay)
         {
-            _show = !_show;
+           // _show = !_show;
             _clock.restart();
         }
     }
-    /*void draw(sf::RenderTarget& target,sf::RenderStates state) const override
-    {
-        if (_show)
-            target.draw(_cursor,state);
-    }*/
+
     sf::RectangleShape _Cursor;
     bool _show;
+    int line=0;
 private:
 
     sf::Font _font;

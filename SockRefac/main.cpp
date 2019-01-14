@@ -39,6 +39,9 @@ int main(int argc, char* argv[])
         // error...
         std::cout <<"error loading fontfile" << std::endl;
     }
+    ClientClass clientOB;
+    clientOB.createThreads();
+    clientOB.startClient();
     sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
 
     ClientClass ClientObj;
@@ -53,9 +56,11 @@ int main(int argc, char* argv[])
     */// run the program as long as the window is open
 
     sf::Event event;
-    //TextField editField2(window,event,0,0);
+    TextField editField2(window,event,0,0);
     TextField editField(window,event,10,550);
-
+    editField2.setNonEditable();
+    editField2.setPosition(sf::Vector2f(10,120));
+    editField2.setSize(sf::Vector2f(500,320));
 
     while (window.isOpen())
     {
@@ -70,14 +75,20 @@ int main(int argc, char* argv[])
 
 
             editField.processEvents();
-            //editField2.processEvents();
+            editField2.processEvents();
 
 
         }
+        clientOB.globalMutex.lock();
+        clientOB.msgQueue.push(MessageObject(editField.getOutput()));
+        editField.clearOutput();
+        editField2.setText(clientOB.msgQueueInc.front().getMsgData());
+        //clientOB.msgQueueInc.pop();
+        clientOB.globalMutex.unlock();
 
         window.clear();
         editField.update();
-        //editField2.update();
+        editField2.update();
 
         window.display();
 

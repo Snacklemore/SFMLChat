@@ -1,14 +1,20 @@
 //
 // Created by Chapo on 06.01.2019.
 //
-
+//flagged all functions using std::cout as subject to change, genereal behaviour should stay the same
 
 #include "ClientClass.h"
-void ClientClass::ClientSendingLoop() {
+void ClientClass::ClientSendingLoop() {//probably no rework needed here
+
     static std::string oldMsg;
     while (!quit) {
         globalMutex.lock();
         if (msgQueue.empty()) {
+            globalMutex.unlock();
+            continue;
+        }
+        if(msgQueue.front().getMsgData() == " " || msgQueue.front().getMsgData().empty()) {
+            msgQueue.pop();
             globalMutex.unlock();
             continue;
         }
@@ -45,7 +51,7 @@ void ClientClass::ClientRec() {
 
 }
 
-void ClientClass::ClientDisplay() {
+void ClientClass::ClientDisplay() {//needs rework
     while (!quit){
         globalMutex.lock();
         if(msgQueueInc.empty())
@@ -71,7 +77,7 @@ void ClientClass::ClientDisplay() {
 
 }
 
-std::string *ClientClass::buildNameTag(int num) {
+std::string *ClientClass::buildNameTag(int num) {//rework needed
     if ( num == 1)
     {
         std::cin.clear();
@@ -108,7 +114,7 @@ void ClientClass::GetInput() {
 
 }
 
-bool ClientClass::startClient() {
+bool ClientClass::startClient() {//needs rework
     std::string IPADDRESS,porthlp;
     unsigned short PORT;
     std::cin.clear();
@@ -132,10 +138,10 @@ bool ClientClass::startClient() {
         std::cout << "Connected to " << socket.getRemoteAddress() << std::endl;
         ClientReceivingThread->launch();
         ClientSendingThread->launch();
-        ClientDisplayThread->launch();
-        while (!quit){
+        //ClientDisplayThread->launch();
+        /*while (!quit){
             GetInput();
-        }
+        }*/
 
         return true;
     }

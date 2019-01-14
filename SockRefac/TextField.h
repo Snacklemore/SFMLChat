@@ -5,10 +5,11 @@
 #ifndef SOCKREFAC_TEXTFIELD_H
 #define SOCKREFAC_TEXTFIELD_H
 
-
+#include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Cursor.h"
-
+//TODO: STILL NEEDS A WAY TO SHRINK EDIT BOX WHEN DELETING MESSAGE WITH BACKSPACE
+// Something like: Shrink box when lines = 1, that way we going to need to count \n in string decreasing lines per \n
 class TextField {
 public:
     sf::RenderWindow &m_window;
@@ -17,6 +18,8 @@ public:
     {
         TextBox.setSize(sf::Vector2f(500.f, 25.f));
         TextBox.setPosition(sf::Vector2f(x,y));
+        baseSize = sf::Vector2f(500.f, 25.f);
+        basePos = sf::Vector2f(x,y);
         text.setPosition(sf::Vector2f(x,y));
         text.setFont(font);
         text.setCharacterSize(16);
@@ -29,7 +32,11 @@ public:
         isActive= false;
         editable = true;
        _cursor= new Cursor(sf::milliseconds(100000),font,sf::Color::Red);
-       _cursor->setPosition(sf::Vector2f(x+1,y+21));
+       sf::Vector2f pos = TextBox.getPosition();
+       pos.x = pos.x +1;
+       pos.y = pos.y +21;
+       _cursor->setPosition(pos);
+
         if (!font.loadFromFile("arial.ttf"))
         {
             // error...
@@ -37,20 +44,26 @@ public:
         }
 
     }
+
+    bool isTextOutside();
     void clearOutput();
     std::string getOutput();
     void setNonEditable();
     void processEvents();
     void update();
+    void setSize(sf::Vector2f size);
+
     void setActive();
     bool isActivated();
-
+    void growEditBox();
     void setText(std::string stri);
     void setPosition(sf::Vector2f pos);
     sf::Vector2f getPos();
     size_t getCursor();
 
 private:
+    sf::Vector2f baseSize;
+    sf::Vector2f basePos;
     Cursor* _cursor;
     bool editable;
     bool isActive;

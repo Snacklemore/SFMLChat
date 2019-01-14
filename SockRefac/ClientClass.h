@@ -12,6 +12,7 @@
 #include <SFML/System/Thread.hpp>
 #include <queue>
 #include <SFML/System/Mutex.hpp>
+#include <SFML/Graphics/Text.hpp>
 #include "MessageObject.h"
 #include "ClientObject.h"
 inline bool containsStr(std::string source,std::string searchStr)
@@ -27,7 +28,7 @@ public:
     void createThreads(){
         ClientSendingThread = new sf::Thread(&ClientClass::ClientSendingLoop,this);
         ClientReceivingThread = new sf::Thread(&ClientClass::ClientRec,this);
-        ClientDisplayThread = new sf::Thread(&ClientClass::ClientDisplay,this);
+        //ClientDisplayThread = new sf::Thread(&ClientClass::ClientDisplay,this);
     }
     bool startClient();//former Client(), not threaded
     void ClientSendingLoop();//threaded
@@ -43,7 +44,7 @@ public:
     sf::Mutex globalMutex;
     sf::Thread* ClientSendingThread = 0;
     sf::Thread* ClientReceivingThread = 0;
-    sf::Thread* ClientDisplayThread = 0;
+    //sf::Thread* ClientDisplayThread = 0;
     sf::TcpSocket socket;
     bool quit = false;
     std::queue<MessageObject> msgQueue;

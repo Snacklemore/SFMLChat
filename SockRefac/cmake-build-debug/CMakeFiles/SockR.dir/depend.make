@@ -6,6 +6,23 @@ CMakeFiles/SockR.dir/ClientClass.cpp.obj: ../ClientClass.h
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: ../ClientObject.h
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: ../MessageObject.h
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Config.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/BlendMode.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Color.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Drawable.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Export.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Font.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Glyph.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Image.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/PrimitiveType.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Rect.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Rect.inl
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/RenderStates.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Text.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Texture.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Transform.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Transformable.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/Vertex.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Graphics/VertexArray.hpp
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Network.hpp
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Network/Export.hpp
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Network/Ftp.hpp
@@ -43,6 +60,8 @@ CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/System/Vector2.inl
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/System/Vector3.hpp
 CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/System/Vector3.inl
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Window/Export.hpp
+CMakeFiles/SockR.dir/ClientClass.cpp.obj: C:/Users/Chapo/Downloads/x86_64-7.3.0-release-posix-seh-rt_v5-rev0/mingw64/SFML-2.5.1/include/SFML/Window/GlResource.hpp
 
 CMakeFiles/SockR.dir/ClientObject.cpp.obj: ../ClientObject.cpp
 CMakeFiles/SockR.dir/ClientObject.cpp.obj: ../ClientObject.h
