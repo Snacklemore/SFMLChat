@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Chapo/CLionProjects/SockRefac/ClientObject.cpp" "C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/SockR.dir/ClientObject.cpp.obj"
   "C:/Users/Chapo/CLionProjects/SockRefac/Cursor.cpp" "C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/SockR.dir/Cursor.cpp.obj"
   "C:/Users/Chapo/CLionProjects/SockRefac/MessageObject.cpp" "C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/SockR.dir/MessageObject.cpp.obj"
+  "C:/Users/Chapo/CLionProjects/SockRefac/MessageWidget.cpp" "C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/SockR.dir/MessageWidget.cpp.obj"
   "C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.cpp" "C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/SockR.dir/ServerClass.cpp.obj"
   "C:/Users/Chapo/CLionProjects/SockRefac/TextField.cpp" "C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/SockR.dir/TextField.cpp.obj"
   "C:/Users/Chapo/CLionProjects/SockRefac/main.cpp" "C:/Users/Chapo/CLionProjects/SockRefac/cmake-build-debug/CMakeFiles/SockR.dir/main.cpp.obj"

@@ -82,8 +82,12 @@ int main(int argc, char* argv[])
         clientOB.globalMutex.lock();
         clientOB.msgQueue.push(MessageObject(editField.getOutput()));
         editField.clearOutput();
-        editField2.setText(clientOB.msgQueueInc.front().getMsgData());
-        //clientOB.msgQueueInc.pop();
+
+        if(!clientOB.msgQueueInc.empty()){
+            editField2.setText(clientOB.msgQueueInc.front().getMsgData());
+            clientOB.msgQueueInc.pop();
+        }
+
         clientOB.globalMutex.unlock();
 
         window.clear();

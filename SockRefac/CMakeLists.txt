@@ -10,5 +10,5 @@ set(EXECUTABLE_NAME "SockR")
 find_package(SFML 2.5 REQUIRED COMPONENTS system window graphics network audio REQUIRED)
 
 
-add_executable(${EXECUTABLE_NAME} main.cpp ClientObject.cpp ClientObject.h MessageObject.cpp MessageObject.h ClientClass.cpp ClientClass.h ServerClass.cpp ServerClass.h TextField.cpp TextField.h Cursor.cpp Cursor.h)
+add_executable(${EXECUTABLE_NAME} main.cpp ClientObject.cpp ClientObject.h MessageObject.cpp MessageObject.h ClientClass.cpp ClientClass.h ServerClass.cpp ServerClass.h TextField.cpp TextField.h Cursor.cpp Cursor.h MessageWidget.cpp MessageWidget.h)
 target_link_libraries(${EXECUTABLE_NAME} sfml-graphics sfml-system sfml-window sfml-audio sfml-network )

@@ -8,6 +8,8 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Cursor.h"
+#include "MessageWidget.h"
+
 //TODO: STILL NEEDS A WAY TO SHRINK EDIT BOX WHEN DELETING MESSAGE WITH BACKSPACE
 // Something like: Shrink box when lines = 1, that way we going to need to count \n in string decreasing lines per \n
 class TextField {
@@ -52,7 +54,9 @@ public:
     void processEvents();
     void update();
     void setSize(sf::Vector2f size);
-
+    void addWidget(MessageWidget *widget);
+    void deleteWidget(MessageWidget *widget);
+    MessageWidget* getWidget(int index);
     void setActive();
     bool isActivated();
     void growEditBox();
@@ -62,6 +66,7 @@ public:
     size_t getCursor();
 
 private:
+    std::vector<MessageWidget*> messageWidgetList;
     sf::Vector2f baseSize;
     sf::Vector2f basePos;
     Cursor* _cursor;

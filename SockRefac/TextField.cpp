@@ -116,7 +116,8 @@ void TextField::processEvents() {
 
 }
 
-void TextField::update() {
+void TextField::update() {//manage drawing of attached widgets
+
     m_window.draw(TextBox);
     m_window.draw(text);
     _cursor->update();
@@ -178,4 +179,16 @@ void TextField::growEditBox() {
 void TextField::setSize(sf::Vector2f size) {
     TextBox.setSize(size);
 
+}
+
+void TextField::addWidget(MessageWidget *widget) {
+
+}
+
+void TextField::deleteWidget(MessageWidget *widget) {
+
+}
+
+MessageWidget *TextField::getWidget(int index) {
+    return nullptr;
 }

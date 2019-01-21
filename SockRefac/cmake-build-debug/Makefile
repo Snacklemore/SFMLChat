@@ -230,6 +230,33 @@ MessageObject.cpp.s:
 	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/MessageObject.cpp.s
 .PHONY : MessageObject.cpp.s
 
+MessageWidget.obj: MessageWidget.cpp.obj
+
+.PHONY : MessageWidget.obj
+
+# target to build an object file
+MessageWidget.cpp.obj:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/MessageWidget.cpp.obj
+.PHONY : MessageWidget.cpp.obj
+
+MessageWidget.i: MessageWidget.cpp.i
+
+.PHONY : MessageWidget.i
+
+# target to preprocess a source file
+MessageWidget.cpp.i:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/MessageWidget.cpp.i
+.PHONY : MessageWidget.cpp.i
+
+MessageWidget.s: MessageWidget.cpp.s
+
+.PHONY : MessageWidget.s
+
+# target to generate assembly for a file
+MessageWidget.cpp.s:
+	$(MAKE) -f CMakeFiles\SockR.dir\build.make CMakeFiles/SockR.dir/MessageWidget.cpp.s
+.PHONY : MessageWidget.cpp.s
+
 ServerClass.obj: ServerClass.cpp.obj
 
 .PHONY : ServerClass.obj
@@ -332,6 +359,9 @@ help:
 	@echo ... MessageObject.obj
 	@echo ... MessageObject.i
 	@echo ... MessageObject.s
+	@echo ... MessageWidget.obj
+	@echo ... MessageWidget.i
+	@echo ... MessageWidget.s
 	@echo ... ServerClass.obj
 	@echo ... ServerClass.i
 	@echo ... ServerClass.s
