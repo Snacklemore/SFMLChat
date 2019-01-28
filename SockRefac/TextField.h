@@ -23,7 +23,7 @@ public:
         baseSize = sf::Vector2f(500.f, 25.f);
         basePos = sf::Vector2f(x,y);
         text.setPosition(sf::Vector2f(x,y));
-        text.setFont(font);
+
         text.setCharacterSize(16);
         text.setFillColor(sf::Color::Red);
         text.setString(str);
@@ -44,6 +44,7 @@ public:
             // error...
 
         }
+        text.setFont(font);
 
     }
 
@@ -54,6 +55,8 @@ public:
     void processEvents();
     void update();
     void setSize(sf::Vector2f size);
+    MessageWidget* createStandardWidget();//This creates a message widget at a position which is suitable. I will pass on the scroll usage for now, we can still scroll to that widgetVector if we need to
+
     void addWidget(MessageWidget *widget);
     void deleteWidget(MessageWidget *widget);
     MessageWidget* getWidget(int index);

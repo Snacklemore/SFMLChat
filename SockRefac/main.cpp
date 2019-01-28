@@ -44,8 +44,6 @@ int main(int argc, char* argv[])
     clientOB.startClient();
     sf::RenderWindow window(sf::VideoMode(800, 600), "My window");
 
-    ClientClass ClientObj;
-    ClientObj.createThreads();
 
 
    //ClientObj.startClient();//replace startClient with appropriate login in sfml window
@@ -61,6 +59,7 @@ int main(int argc, char* argv[])
     editField2.setNonEditable();
     editField2.setPosition(sf::Vector2f(10,120));
     editField2.setSize(sf::Vector2f(500,320));
+    editField2.createStandardWidget();
 
     while (window.isOpen())
     {
@@ -71,7 +70,13 @@ int main(int argc, char* argv[])
 
             // "close requested" event: we close the window
             if (event.type == sf::Event::Closed)
+            {
+
                 window.close();
+
+
+            }
+
 
 
             editField.processEvents();
@@ -99,8 +104,10 @@ int main(int argc, char* argv[])
 
 
     }
-
+    clientOB.destroyThreads();
     return 0;
+
+
 
 
 

@@ -30,6 +30,13 @@ public:
         ClientReceivingThread = new sf::Thread(&ClientClass::ClientRec,this);
         //ClientDisplayThread = new sf::Thread(&ClientClass::ClientDisplay,this);
     }
+    void destroyThreads()
+    {
+        ClientReceivingThread->terminate();
+        ClientSendingThread->terminate();
+        delete ClientSendingThread;
+        delete ClientReceivingThread;
+    }
     bool startClient();//former Client(), not threaded
     void ClientSendingLoop();//threaded
     void ClientRec();//threaded

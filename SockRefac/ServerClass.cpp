@@ -114,6 +114,7 @@ void ServerClass::startServer() {
         if (test.wait()) {
 
             if (test.isReady(listener)) {
+                //TODO: SERVERCLIENT AUTHENTICATION WITH PROPER MECHANISM;THROW SOMETHING TOGETHER!!!(MAYBER OPENSSL(ITSPAININTHEASS))LOAD KEYS FROM FILE
                 sf::TcpSocket *client = new sf::TcpSocket;
                 if (listener.accept(*client) == sf::Socket::Done) {
                     sf::Packet packet;

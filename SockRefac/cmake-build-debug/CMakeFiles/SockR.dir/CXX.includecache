@@ -40,6 +40,20 @@ C:/Users/Chapo/CLionProjects/SockRefac/MessageObject.h
 string
 -
 
+C:/Users/Chapo/CLionProjects/SockRefac/MessageWidget.cpp
+MessageWidget.h
+C:/Users/Chapo/CLionProjects/SockRefac/MessageWidget.h
+
+C:/Users/Chapo/CLionProjects/SockRefac/MessageWidget.h
+SFML/Graphics.hpp
+-
+iostream
+-
+
+C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.cpp
+ServerClass.h
+C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.h
+
 C:/Users/Chapo/CLionProjects/SockRefac/ServerClass.h
 iostream
 -
@@ -62,6 +76,10 @@ C:/Users/Chapo/CLionProjects/SockRefac/ClientObject.h
 sstream
 -
 
+C:/Users/Chapo/CLionProjects/SockRefac/TextField.cpp
+TextField.h
+C:/Users/Chapo/CLionProjects/SockRefac/TextField.h
+
 C:/Users/Chapo/CLionProjects/SockRefac/TextField.h
 iostream
 -
@@ -69,6 +87,8 @@ SFML/Graphics.hpp
 -
 Cursor.h
 C:/Users/Chapo/CLionProjects/SockRefac/Cursor.h
+MessageWidget.h
+C:/Users/Chapo/CLionProjects/SockRefac/MessageWidget.h
 
 C:/Users/Chapo/CLionProjects/SockRefac/main.cpp
 iostream

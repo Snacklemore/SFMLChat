@@ -119,7 +119,12 @@ void TextField::processEvents() {
 void TextField::update() {//manage drawing of attached widgets
 
     m_window.draw(TextBox);
-    m_window.draw(text);
+    m_window.draw(text);//CHCEK IF LIST EMPTY FKING MORRON GODAMDINT IAJJL *`?!=$!"
+    if(!messageWidgetList.empty()){
+        m_window.draw(*messageWidgetList[0]->getWindow());
+        m_window.draw(*messageWidgetList[0]->getDrawText());
+    }
+
     _cursor->update();
     if(isActive && editable){
 
@@ -181,14 +186,48 @@ void TextField::setSize(sf::Vector2f size) {
 
 }
 
-void TextField::addWidget(MessageWidget *widget) {
+void TextField::addWidget(MessageWidget *widget){
+    messageWidgetList.push_back( widget);
 
 }
 
-void TextField::deleteWidget(MessageWidget *widget) {
+void TextField::deleteWidget(MessageWidget *widget)
+{
+
+    for (std::vector<MessageWidget*>::iterator it = messageWidgetList.begin();it != messageWidgetList.end();it++)
+    {
+       if (*it == widget)
+       {
+           messageWidgetList.erase(it);
+       }
+    }
+
 
 }
 
 MessageWidget *TextField::getWidget(int index) {
-    return nullptr;
+    return messageWidgetList[index];
+}
+
+MessageWidget *TextField::createStandardWidget() {
+    MessageWidget* rtnWidget;
+    if(messageWidgetList.empty())
+    {
+        sf::Vector2f ownerPos = TextBox.getPosition();
+        ownerPos.x = ownerPos.x + 10;
+        ownerPos.y = ownerPos.y + 10;
+        size_t listSize = messageWidgetList.size();
+        sf::Vector2f onwerScale = TextBox.getSize();
+        onwerScale.x = onwerScale.x-100;
+        onwerScale.y = onwerScale.y-270;
+        rtnWidget = new MessageWidget(onwerScale,ownerPos,"widget1","GLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy "); //scaling according to text needs to be done in constructor of MessageWidget
+        rtnWidget->_owner = this;
+        addWidget(rtnWidget);
+        return rtnWidget;
+    } else
+    {
+
+    }
+
+
 }
